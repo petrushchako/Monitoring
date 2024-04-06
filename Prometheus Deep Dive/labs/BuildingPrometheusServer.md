@@ -47,3 +47,84 @@ prometheus --config.file=/etc/prometheus/prometheus.yml
 > **Press Ctrl+C to stop the process.**
 
 
+## Configure Prometheus as a systemd Service
+
+### Create a systemd unit file for Prometheus:
+```shell
+sudo vi /etc/systemd/system/prometheus.service
+```
+
+<br>
+
+### Define the Prometheus service in the unit file:
+
+```shell
+[Unit]
+Description=Prometheus Time Series Collection and Processing Server
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=prometheus
+Group=prometheus
+Type=simple
+ExecStart=/usr/local/bin/prometheus \
+    --config.file /etc/prometheus/prometheus.yml \
+    --storage.tsdb.path /var/lib/prometheus/ \
+    --web.console.templates=/etc/prometheus/consoles \
+    --web.console.libraries=/etc/prometheus/console_libraries
+
+[Install]
+WantedBy=multi-user.target
+```
+
+<br>
+
+### Make sure systemd picks up the changes we made:
+```shell
+sudo systemctl daemon-reload
+```
+
+<br>
+
+### Start the Prometheus service:
+```shell
+sudo systemctl start prometheus
+```
+
+<br>
+
+### Enable the Prometheus service so it will automatically start at boot:
+```shell
+sudo systemctl enable prometheus
+```
+
+<br>
+
+### Verify the Prometheus service is healthy:
+```shell
+sudo systemctl status prometheus
+```
+
+We should see its state is `active (running)`.
+
+Press `Ctrl+C` to stop the process.
+
+<br>
+
+### Make an HTTP request to Prometheus to verify it is able to respond:
+```shell
+curl localhost:9090
+```
+
+The result should be:<br>
+ `<a href="/graph">Found</a>.`
+
+<br>
+
+### Check in browser
+In a new browser tab, access Prometheus by navigating to:
+
+`http://<PROMETHEUS_SERVER_PUBLIC_IP>:9090` 
+
+(replacing <PROMETHEUS_SERVER_PUBLIC_IP> with the IP listed on the lab page). We should then see the Prometheus expression browser.
