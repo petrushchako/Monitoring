@@ -50,6 +50,15 @@ It is an automated process by which one can observe and detect compliance issues
 - It is a community-driven open-source monitoring framework
 - Has a robust alert mechanism
 - A Cloud Native Computing Foundation (CNCF) graduated project
+- Open source systems monitoring and alerting toolkit
+- Collects and stores metrics as a time series data
+- Scrapes targets
+- PromQL is the language used to query time series in Prometheus
+- Service discovery helps find our services and monitor them
+- Exporters help to monitor 3rd party components
+- Can send alerts to alert manager
+- Prometheus runs on port 9090 and alert manager on 9093
+
 
 ### Prometheus architecture
 ![](img/prometheusArchitecture.png)
