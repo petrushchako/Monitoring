@@ -103,3 +103,34 @@ It is an automated process by which one can observe and detect compliance issues
   - You don't know what the range of values will be up front, so cannot use histograms
 
 
+<br><br>
+
+## Grafana
+Grafana is a multi-platform open-source analytics and interactive visualization web application. It provides:
+  - Charts
+  - Graphs
+  - Alerts
+
+### Grafana features
+- **Visualize**
+
+    Grafana has a plethora of visualization options to help you understand your data, beautifully
+
+- **Alert**
+
+    Seamlessly define alerts where it makes sense - while you're in the data
+
+- **Unify**
+
+    Grafana supports dozens of databases, natively. Mix them together in the same Dashboard
+
+- **Alert**
+    Grafana is completely open-source and backed by a vibrant community
+
+- **Extend**
+
+    Discover hundreds of dashboards and plugins in the official library
+
+- **Collaborate**
+
+    Bring everyone together, and share data and dashboards across teams
