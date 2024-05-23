@@ -209,3 +209,10 @@ Nagios XI helps every IT company in:
 - Monitors network services like HTTP, SMTP, HTTP, SNMP, FTP, SSH, and POP
 - Maintains the security and availability of the service
 
+### Getting started with Nagios XI
+- Nagios has a client-server architecture
+- Nagios server is typically running on a host
+- Plugins are running on the remote hosts
+- ![](img/nagiosArchitecture.png)
+
+
