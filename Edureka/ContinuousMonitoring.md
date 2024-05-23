@@ -143,3 +143,69 @@ Grafana is a multi-platform open-source analytics and interactive visualization 
 - **Collaborate**
 
     Bring everyone together, and share data and dashboards across teams
+
+
+<br><br>
+
+## Nagios XI
+
+#### Topics
+- Introduction to Nagios XI
+- Nagios Architecture
+- Setting up and Configuring Nagios XI
+- Managing Nagios XI
+- Monitoring using Nagios XI
+
+### Introduction to Nagios XI
+
+Nagios XI is a enterprise Server and Network Monitoring Software
+
+Nagios XI monitors all mission-critical components in the IT infrastructure
+- Servers
+- Networks
+- Operating Systems
+- Applications
+- System Metrics
+- Services
+- Network Protocols
+
+<br>
+
+Nagios is a well-known open-source solution for continuous monitoring of Linux, Windows, applications and infrastructure workloads
+
+Nagios depends on expert partners around the world to deploy services and support companies using their technology
+
+<br>
+
+Nagios XI helps every IT company in:
+- IT Infrastructure Monitoring
+- Multi-Tenant Capabilities
+- Server Performance Monitoring
+- Configuration Wizards
+- Advanced User Management
+- Extendable Architecture
+- Customizability
+- IT Operations Network
+- Capacity Planning
+- Network Incident Alerts
+- Capacity Planning Graphs
+- User-Specific Views
+- Update Web Interface
+- Infrastructure Management
+- Configuration Snapshot
+
+<br>
+
+#### Features of Nagios Monitoring Tool
+- Scalable, Manageable, and Secure
+- Good log and database system
+- Informative and attractive web interface
+- Automatically send alerts when condition changes
+- Detects all network or server issues
+- Monitors and fixes server performance issues
+- Helps to plan infrastructure upgrades before outdated systems create failures
+- Active monitoring of entire infrastructure and business processes
+- Diagnose the root cause of the problem to get the permanent solution
+- Monitors network services like HTTP, SMTP, HTTP, SNMP, FTP, SSH, and POP
+- Maintains the security and availability of the service
+
