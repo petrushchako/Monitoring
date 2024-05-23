@@ -247,3 +247,145 @@ Nagios XI helps every IT company in:
 - When alert is raised, the Nagios server sends a notification to the administrator
 - ![](img/nagiosGUI.png)
 
+<br>
+### Setting up and Configuring Nagios XI
+#### Prerequisites for Setting up Nagios on Ubuntu
+- Prior to Nagios installation, install packages such as Apache, PHP, and building packages on your Ubuntu system
+
+#### Installation
+1. **Run the following command for installing pre-required packages**
+   
+    ```sh
+    sudo apt-get install wet build-essential apache2 php apache2-mod-php7.0 php-gd libgd-dev sendmail unzip
+    ```
+
+2. **Create Nagios user and group, then add them to Apache `www-data` graoup**
+
+    ```sh
+    sudo useradd nagios
+    sudo groupadd nagcmd
+    sudo usermod -a - G nagcmd nagios
+    sudo usermod -G nagios, nagcmd www-data
+    ```
+
+3. **Download the latest Nagios package**
+
+    ```sh
+    wget https://assets.nagios.com/downloads/nagioscore/releases/nagios4.4.3.tar.gz
+    ```
+
+4. **Extract the tarball file**
+
+    ```sh
+    tar -xzf nagios-4.4.3.tar.gz
+    cd nagios-4.4.3/
+    ```
+
+5. **Compile Nagios from source**
+
+    ```sh
+    ./configure --with-nagios-group=nagios --with-command-group=nagcmd
+    ```
+
+6. **Build Nagios files**
+
+    ```sh
+    make all
+    ```
+
+7. **Install all Nagios files**
+
+    ```sh
+    sudo make isntall
+    ```
+
+8. **Install init and external command configuration files**
+
+    ```sh
+    sudo make install-commandmode
+    sudo make install-init
+    sudo make install-config
+    sudo /usr/bin/install -c -m 644 sample-config/httpd.conf/etc/apache2/sitesavailable/nagios.conf
+    ```
+
+9. **Copy event handler directly to the Nagios directory**
+    ```sh
+    sud cp -R contrib/eventhandlers//usr/local/nagios/libexec/
+    sudo chow -R nagios:nagios/usr/local/nagios/libexec/eventhandlers
+    ```
+
+10. **Download latest Nagios package**
+
+    ```sh
+    wget https://nagios-plugins.org/download/nagiosplugins-2.2.1.tar.gz
+    tar -xzf nagios-plugins*.tar.gz
+    cd nagios-plugins-2.2.1/
+    ```
+
+11. **Install Nagios plugins**
+
+    ```sh
+    ./configure --with-nagios-user=nagios --with-nagios-group=nagios--with-openssl
+    sudo make install
+    ```
+
+12. **Edit Nagios configuration file and uncomment line number 51 `cfg_dir=/usr/local/nagios/etc/servers`**
+
+    ```sh
+    cfg_dir=/usr/local/nagios/etc/servers
+    sud gedit/usr/local/nagios/etc/nagios.cfg
+    ```
+
+13. **Create server directory**
+
+    ```sh
+    sudo mkdir -p /usr/local/nagios/etc/servers
+    ```
+
+14. **Edit contacts configuration file**
+
+    ```sh
+    sudo gedit /usr/local/nagios/etc/objects/contacts.cfg
+    ```
+
+15. **Enable Apache modules, and then configure `nagiosadmin` user**
+
+    ```sh
+    sudo a2enmod rewrite
+    sudo a2enmod cgi
+    sudo htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+    sudo ln -s /etc/apache2/sites-available/nagios.conf /etc/apache2/sites-enabled/
+    ```
+
+16. **Restart services**
+
+    ```sh
+    service apache2 restart
+    service nagios start
+    cd /etc/init.d/
+    sudo cp /etc/init.d/skeleton /etc/init.d/Nagios
+    ```
+
+17. **Edit Nagios file**
+
+    ```sh
+    sud gedit/etc/init.d/Nagios
+    DESC = "Nagios"
+    NAME = nagios
+    DAEMON = /usr/local/nagios/bin/NAME
+    DAEMON_ARGS="-d /usr/local/nagios/etc/nagios.cfg"
+    PIDFILE=/usr/local/nagios/var/$NAME.lock
+    ``` 
+
+18. **Make Nagios file executable and start Nagios**
+
+    ```sh
+    sudo chmod +x /etc/init.d/nagios
+    service apache2 restan
+    service nagios start
+    ```
+
+19. **Login to nagios**
+  - In your browser, open URL http://localhost/nagios
+  - Next, login with the username and password
+  - ![](img/nagiosLogin.png) 
