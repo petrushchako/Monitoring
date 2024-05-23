@@ -149,6 +149,10 @@ Grafana is a multi-platform open-source analytics and interactive visualization 
 
 ## Nagios XI
 
+### Links
+- Download link for Nagios<br>https://www.nagios.org/download/
+- Download link for Nagios Plugins Project<br>https://github.com/nagios-plugins/nagios-plugins
+
 #### Topics
 - Introduction to Nagios XI
 - Nagios Architecture
@@ -214,5 +218,25 @@ Nagios XI helps every IT company in:
 - Nagios server is typically running on a host
 - Plugins are running on the remote hosts
 - ![](img/nagiosArchitecture.png)
+
+
+### Nagios Plugins
+
+![](img/nagiosPluginsArchitecture.png)
+
+#### Plugins
+- Plugins are scripts or compiled executable
+- Nagios executes a plugin to check the status of a service or host
+- Plugins also helps to monitor databases, operating systems, applications, network equipment, and protocols with Nagios
+
+#### Embedded Perl Interpreter
+- Nagios uses an embedded Perl interpreter to execute Perl plugins
+- Without Perl interpreter, Nagios executes Perl and non-Perl plugins by forking and executing the plugins as an external command
+
+
+#### Types of Nagios Plugins
+- **Official Nagios Plugins**<br>50 official Nagios plugins are developed and maintained by the official Nagios Plugins Team
+- **Community Plugins**<br>More than 3,000 third party Nagios plugins are developed by hundreds of Nagios community members
+- **Custom Plugins**<br>You can write your own custom plugins by following some guidelines
 
 
