@@ -389,3 +389,19 @@ Nagios XI helps every IT company in:
   - In your browser, open URL http://localhost/nagios
   - Next, login with the username and password
   - ![](img/nagiosLogin.png) 
+
+<br>
+
+## Managing Nagios XI
+
+### Managing Permissions
+- Managing users and their permissions is a critical task for Nagios administrators, particularly in multi-tenancy environments
+- Permissions for any user can be configured or changed when:
+  - Adding a new user account to Nagios XI
+  - Editing an existing user on the Manage Users page
+
+#### Managing Permissions step by step
+1. Navigate to **Admin > Users > Managing Users**
+2. To create a new user, click the `Add New User` button
+3. When creating a user, enable the `Create as Monitoring Contact` option on the `Add New User` page. It ensures that a matching contact object is created in tha Nagios monitoring configuration <br> ![](img/addUser.png)
+4. To edit existing user click the `Edit` icon for the user you want to edit<br> ![](img/editUser.png)
