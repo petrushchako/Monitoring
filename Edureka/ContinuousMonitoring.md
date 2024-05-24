@@ -449,3 +449,60 @@ Nagios XI helps every IT company in:
   - Access to the documentation is limited to users who have API access 
 - Common security settings for an advanced user<br> ![](img/securitySetting.png)
   
+<br><br>
+
+## Monitoring Using Nagios XI
+![](img/nagiosMonitoringModel.png)
+
+- Nagios daemon run checks on remote machines in NRPE (Nagios Remote Plugin Executor)
+- Allows to run Nagios plugins on other machines remotely
+- Monitors remote machine metrics like disk usage and CPU load
+- Uses windows agent addons to check metrics of remote windows machines
+
+## Installing and configuring NRPE
+1. Install NRPE on the remote Linux machine to be monitored
+
+    ```sh
+    sudo apt-get isntall nagios-nrpe-server nagios-plugins
+    ```
+2. Create host file inside the server directly and place all the necessary definitions for the host
+
+    ```sh
+    sudo gedit /usr/local/nagios/etc/servers/ubuntu_host.cfg
+    ```
+
+    ```json
+    # Ubuntu Host configuration file
+
+    define host {
+        use                 linux-server
+        host_name           ubuntu_host
+        alias               Ubuntu Host
+        address             192.168.1.10
+        register            1
+    }
+
+    define service {
+        host_name           ubuntu_host
+        service_description PING
+        check_command       check_ping!100.0,20%!500.0,60%
+        . . . .
+    }
+    ```
+
+3. Verify configuration file
+
+    ```sh
+    sudo /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
+    ```
+
+4. If there are no errors, restart NRPE, Apache and Nagios
+
+    ```sh
+    service nagios-nrpe-server restart
+    service apache2 restart
+    service nagios restart
+    ```
+
+5. Open Nagios web interface and you can see the host which needs to be monitored has been added to Nagios core service<br>![](img/NRPE.png)
+
