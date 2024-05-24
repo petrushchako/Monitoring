@@ -405,3 +405,35 @@ Nagios XI helps every IT company in:
 2. To create a new user, click the `Add New User` button
 3. When creating a user, enable the `Create as Monitoring Contact` option on the `Add New User` page. It ensures that a matching contact object is created in tha Nagios monitoring configuration <br> ![](img/addUser.png)
 4. To edit existing user click the `Edit` icon for the user you want to edit<br> ![](img/editUser.png)
+
+<br>
+
+### Security Settings
+- Options selected in the **Security Settings** section of the **Add/Edit** User page determine permissions
+- **User** is the default selection under **Authorization Level** and this permission is the most restrictive permission in Nagios XI
+- With no options selected, the user can only see hosts and services that are defined as a contact
+- ![](img/securitySettings.png)
+
+<br>
+
+#### Description of Security Setting Option
+|Security Setting Option|Option Description|
+|---|---|
+|*Can see all objects*| - User can see all monitored hosts and services|
+|*Can control hosts and services*|User can: <br>- Acknowledge problems<br>- Schedule downtime<br>- Toggle notifications<br>- Force checks and all objects|
+|*Can configure hosts and services*|User can:<br>- Run configuration Wizards<br>- Delete from details page<br>- Re-configure from detail page|
+|*Can access advanced features*|User can:<br>- Edit check command in re-configure host/service page<br>- Show the Advanced tab and commands on host/service page<br>- Allows setting host parents in wizards and in re-configure<br>- host/service page|
+|*Can access monitoring engine*|User can:<br>- See the monitoring process icon on the navigation bar<br>- Control (e.g. shutdown or restart) the monitoring engine<br>- Allow access to the Event Log|
+
+#### Administrator Privileges
+- Users configured as **Admin** under **Authorization Level** will have the ability to access, add and reconfigure the following:
+  - Users
+  - Hosts
+  - Services
+  - Components
+  - Configuration Wizards
+  - Dashlets
+  - Program Settings
+  - Security Credentials
+
+
