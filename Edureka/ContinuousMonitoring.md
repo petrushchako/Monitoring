@@ -550,3 +550,50 @@ Nagios XI helps every IT company in:
     - Esily integrated with Nagios XI and Nagios Core to give complete visibility of the infrastructure
     - Price $2495
 
+<br>
+
+### Capacity Planning
+- Capacity Planning is a feature of the enterprise Edition License
+- If you don't have the Enterprise Edition, you can enable free 60-day trial  to experience it's features before making a purchase
+- Trial can be activated via **Admin > System Config > License Information**
+- Capacity Planning is found under the Reports menu
+- Default view displays one week capacity planning reports for the hosts in alphabetical order
+
+<br>
+
+### Audit Logging
+- Collecting Logs using Nagios Log Server<br>Nagios Log Server for collecting logs from a variety of data sources includes the following:
+  - Operating System logs from Windows and Linux machine
+  - Syslog from different devices, applications and databases
+  - Event Logs such as Windows Event Logs
+  - Application-specific Logs such as IIS, Tomcat Apache and other enterprise applications
+  - Database logs from industry-standard databases such as Oracle, MS SQL, MySQL, Postgre SQL, Maria DB, Big Data sources, etc.
+  - Logs from any generic log source files
+- Adutiting and Querying<br>With Nagios log server, you can meet following requirements on Audit and Compliance:
+  - Generate audit reports from Logs
+  - Identify how each application, database or operating system is being affected by user
+  - User queries to create reports for specific audit requirements
+  - Create dashboards that will help in auditing
+  - Generate Database Audit reports, Application Aduit reports and Website Audit reports
+- Complicance Requirements<br>Altnix can customize your Nagios Log Server to identify if you are complicant with following regulations
+  - Compliance to ISO standards such as ISO9000 and ISO27000
+  - Compliance to government regulations such as PCI, HIPAA and SOX
+  - Meet requirements around management, maintenance and archival of Logs in an IT infrastructure
+- Log Monitoring<br>Altnix can implement log monitoring using Nagios log server and other Nagios products:
+  - File integrity monitoring
+  - Monitoring unauthorized access to applications, systems and databases
+  - Monitor for any regular expression in your logs
+  - Create email alters based on Log Monitoring policies and send to an admin
+- Altnix can integrate Nagios Log Server with Nagios XI and Nagios Core:
+  - Create service checks in Nagios XI using pattern matches on Nagios Log Server
+  - Generate alert and email notifications based on IT policy and Security Policy
+  - Provide escalation as per business processes
+
+#### Benefits of Audit Log Monitoring
+- Increase Security
+- Increase awareness of network infrastructure problems
+- Increase availability of server, services and application
+- Fastly detect the network outages and protocol failures
+- Fastly detect failed processes, services, cron jobs and batch jobs
+- Audit and regulatory complicane
+
