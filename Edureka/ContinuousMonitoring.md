@@ -437,3 +437,15 @@ Nagios XI helps every IT company in:
   - Security Credentials
 
 
+<br><br>
+
+## Nagios XI API
+- Nagios XI API was added in XI 5
+- It's a REST API in Nagios XI system with many features
+- API permits users to read, write, delete, and update data in the Nagios XI system through authenticated commands via Nagios XI API keys
+- Every user has their own API key to access the API<br>Access is defined as:
+  - Normal users have READ access if the REST API Access setting is selected
+  - Admin users will get full access to the API if the REST API Access setting is selected
+  - Access to the documentation is limited to users who have API access 
+- Common security settings for an advanced user<br> ![](img/securitySetting.png)
+  
