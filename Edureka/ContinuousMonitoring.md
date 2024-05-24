@@ -506,3 +506,47 @@ Nagios XI helps every IT company in:
 
 5. Open Nagios web interface and you can see the host which needs to be monitored has been added to Nagios core service<br>![](img/NRPE.png)
 
+<br><br>
+
+### Advanced Visualization
+- Turns raw data into useful information
+- To communicate complex ideas and information in an understandable format
+- Wider audience of understanding
+- Can present technical concepts to non-technical users
+- Can clearly reveal the source of problems
+- As environments get larger, data visualization becomes more important
+
+<br><br>
+
+## Nagios Products
+
+![](img/nagiosProducts.png)
+
+1. **Nagios XI**
+    - Offers monitoring for complete IT infrastructure components like applications, services, network and operating systems
+    - Nagios XI GUI is easily customizable
+    - Price:
+      - Standard edition costs $1995
+      - Enterprise edition costs $3495
+2. **Nagios Core**
+    - Nagios core is absolutely free
+    - Core on monitoring IT infrastructure
+    - Nagios XI is fundamentally based on Nagios core
+    - If there is a failure in the infrastructure, Nagios core sends and alert/notification to the administration
+3. **Nagios Log Server**
+    - Simplifies the searching of log data
+    - Keeps all the log data at one location with high availability
+    - Send alerts if any issues if found in the log data
+    - It may scale to 1000s of servers to provide more power, speed, storage and reliability to your log analysis platform 
+    - Price depends on the number of instances:
+      - 1 instance $3995
+      - 2 isntances $4995
+      - 3 instances $5995
+      - 4 isntances $6995
+      - 10 instances $14995
+4. **Nagios Fusion**
+    - Provides a centralized view of complete monitoring system
+    - With Nagios Fusion, you can setup separate monitoring servers for separate geofraphies
+    - Esily integrated with Nagios XI and Nagios Core to give complete visibility of the infrastructure
+    - Price $2495
+
