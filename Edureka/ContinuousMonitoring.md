@@ -622,3 +622,27 @@ An Application which provides organizations a central location to send their mac
 - Get all of your log data in one location with high availability and failover buit-in
 - Quickly configure your server and start monitoring your logs in minutes
 
+### Features of Nagios Log server
+
+**Infinite Scalability**
+- Allows to quickly add extra cluster instances to your overall log analysis platform for providing more power, speed, storage and reliability
+- Nagios Log Server is suitable for organization of any size and can be scaled up or down with push of a button
+
+**Real Time Data**
+- In just a few clicks, you can easily correlate log events across all servers
+- Allows you to view log data from all of your servers in real time, as well as analyze and solve problems as they arise
+
+**Adaptability**
+- Nagios Log Server API is fully accessible, allows complete integration to fit the needs of your external applications
+- Nagios Log Server easily integrates with third-party applications or your existing infrastructure
+
+**User Management**
+- Mlti-user capabilities allow IT teams to wirk together efficiently
+- Admins can set access permissions, also can add, modify and remove users
+- Admins grant specified users access to external API via access key
+
+**Network Security**
+- Nagios Log Server is a premier solution which is perfectly designed for security and network auditing
+- Create alerts from the web-interface depending on your important queries and thresholds
+- Notifies users via Nagios XI/Nagios Core, email, SNMP traps or executes a script to ensure quick problem resolution
+- Keeps history archives of all events should a security audit be needed, and keeps your organization in compliance with security requirements
