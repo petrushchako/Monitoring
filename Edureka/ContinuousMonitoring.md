@@ -668,3 +668,15 @@ Nagios Log Server is a combination of three different open-source components:
 - **Logstash**<br>Act as log receiver for Log Server - Logstash output logs to Elasticsearch datastore
 - **Kibana**<br>Visualization component of the ELK stack - Used to produce dashboards made up of tables, graphs and other elements
 
+<br>
+
+### Log Server 2.0 Architecture
+
+![](img/nagiosLogServerArchitecture.png)
+
+- Logstash is the most complex component in Nagios Log Server
+- Logstash agent is a processing pipeline with three stages **Input>Filter>Output**
+- Inputs receive incoming logs and those logs are passed to the filter chain, filter modify them, outputs ship them elswhere to the Elasticsearch database
+
+<br>
+
