@@ -658,3 +658,13 @@ An Application which provides organizations a central location to send their mac
 - Developers can send debug logs to Log Server and simply filter out unimportant information, leaving only the most crucial information
 - Organization can utilize the graphical and analytic capabilities of Log Server to analyze web server logs
 - Users can achieve Nagios XI or Core check results using a small script and can set up custom dashboard for visulization of data
+
+
+<br>
+
+### Components of Nagios Log Server
+Nagios Log Server is a combination of three different open-source components:
+- **Elasticsearch**<br>Scalable and redundant datastore used by Log Server
+- **Logstash**<br>Act as log receiver for Log Server - Logstash output logs to Elasticsearch datastore
+- **Kibana**<br>Visualization component of the ELK stack - Used to produce dashboards made up of tables, graphs and other elements
+
