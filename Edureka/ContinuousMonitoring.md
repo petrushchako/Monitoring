@@ -691,3 +691,11 @@ Nagios Log Server is a combination of three different open-source components:
 **ELK Stack**
 - ELK stack is available to anyone who wants to query it
 - System administrators will to spend time developing porotection methods for the ELK Stack
+
+<br>
+
+### Setting Up Alerting System
+- `<contact_groups>` option in each host and service definition specifies which contact groups receive notifications for that particular host or service
+- When Nagios Core sends out a host or service notification, it notifies each contact of any contact groups specified in the `<contact_groups>` option
+- If a contact is a member of more than one contact group, Nagios Core removes duplicate contact notifications
+
