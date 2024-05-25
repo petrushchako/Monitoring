@@ -680,3 +680,14 @@ Nagios Log Server is a combination of three different open-source components:
 
 <br>
 
+### How Nagios Log Server differs from ELK Stack
+
+**Nagios Log Server (NLS)**
+- Pre-configured for optimal performance
+- Fully supported by Nagios support stadd such as phone, email of forum
+- Comes with built-in security, alert system and authentication
+- System administrators spend more time producing log visualizations and less time for tuning machines
+
+**ELK Stack**
+- ELK stack is available to anyone who wants to query it
+- System administrators will to spend time developing porotection methods for the ELK Stack
