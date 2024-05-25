@@ -597,3 +597,28 @@ Nagios XI helps every IT company in:
 - Fastly detect failed processes, services, cron jobs and batch jobs
 - Audit and regulatory complicane
 
+<br><br>
+
+## Log server 2.0 and alerting Nagios
+#### Topics
+- Log Server
+- Log Server 2.0 Architecture
+- Log Server 2.0 Interface
+- Alerting on Data
+- Setting up Alerting System
+- Configuring Inputs, Outputs, and Filters
+- Global Settings
+- Auto Discovery
+- Notifications
+
+### Instroduction to Log Server
+#### Nagios Log Server
+
+An Application which provides organizations a central location to send their machine generated event data<br>Stores the data for later retrieval, querying and analysis in near real-time
+
+- Greatly simplifies searching of log data
+- Create alerts to notify you when potential threats arise
+- Query your log data to quickly audit any system
+- Get all of your log data in one location with high availability and failover buit-in
+- Quickly configure your server and start monitoring your logs in minutes
+
