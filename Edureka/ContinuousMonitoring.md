@@ -646,3 +646,15 @@ An Application which provides organizations a central location to send their mac
 - Create alerts from the web-interface depending on your important queries and thresholds
 - Notifies users via Nagios XI/Nagios Core, email, SNMP traps or executes a script to ensure quick problem resolution
 - Keeps history archives of all events should a security audit be needed, and keeps your organization in compliance with security requirements
+
+<br>
+
+### Nagios Log Server - Use Case
+
+**Most Common Use Case**
+- An obvious application where Log Server is used as an advanced system to evaluate the received log events and send important items to Nagios Core or Nagios XI
+
+**Least Common Use Cases**
+- Developers can send debug logs to Log Server and simply filter out unimportant information, leaving only the most crucial information
+- Organization can utilize the graphical and analytic capabilities of Log Server to analyze web server logs
+- Users can achieve Nagios XI or Core check results using a small script and can set up custom dashboard for visulization of data
