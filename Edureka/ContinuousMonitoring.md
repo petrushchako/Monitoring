@@ -699,3 +699,4 @@ Nagios Log Server is a combination of three different open-source components:
 - When Nagios Core sends out a host or service notification, it notifies each contact of any contact groups specified in the `<contact_groups>` option
 - If a contact is a member of more than one contact group, Nagios Core removes duplicate contact notifications
 
+### pg 27
