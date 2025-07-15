@@ -67,3 +67,24 @@ Dynatrace has evolved from a new-generation monitoring vendor into a leading pla
 - Gain practical knowledge for problem troubleshooting using AI and service-level objectives (SLOs)
 
 <br><br><br>
+
+# Explaining Dynatrace Concepts
+## Introducing Dynatrace
+Dynatrace is a leading SaaS vendor in the monitoring and observability space. The platform has significantly evolved to meet the demands of modern digital businesses aiming to enhance customer experiences.
+
+### Case Study: Bethany's Pie Shop
+To illustrate the need for Dynatrace, the course introduces a fictional company: **Bethany's Pie Shop**.
+- **Gordon**, the performance engineer, is responsible for planning, troubleshooting, and maintaining performance tools.
+- With increased demand for online shopping and delivery, Bethany's Pie Shop needed to scale their digital presence. However, their legacy website was not built for high traffic or delivery capabilities.
+- The existing monitoring tools were sufficient for a simple site but became inadequate as the business adopted a **hybrid cloud infrastructure** and **modernized their application architecture** from monoliths to microservices.
+
+This digital transformation led to:
+- Increased complexity in the IT environment
+- Loss of visibility across services and infrastructure
+- A need for a new monitoring solution that could keep up with the evolving system
+
+### Evaluation of Dynatrace
+To regain observability and improve performance monitoring, Gordon and his team began evaluating market-leading tools. Guided by research from Gartner, Dynatrace emerged as a top candidate for Application Performance Monitoring (APM) and observability.
+
+<br><br><br>
+
