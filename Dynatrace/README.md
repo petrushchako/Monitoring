@@ -57,4 +57,13 @@ Dynatrace is a solution that enables IT professionals to monitor and observe app
 
 <br><br><br>
 
-## 
+## Course Overview
+Dynatrace has evolved from a new-generation monitoring vendor into a leading platform for observability. With increasing complexity in modern IT infrastructures and applications, Dynatrace integrates an AI engine at its core to support faster, more efficient problem-solving.
+
+### Course Objectives:
+- Understand the use cases for IT performance monitoring and observability
+- Learn how Dynatrace discovers and collects data using agent-based and agentless methods
+- Explore platform features for data visualization, querying, and analysis using dashboards and flows
+- Gain practical knowledge for problem troubleshooting using AI and service-level objectives (SLOs)
+
+<br><br><br>
