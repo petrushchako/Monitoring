@@ -177,3 +177,29 @@ Dynatrace’s platform is built around a dynamic set of capabilities. While the 
     Since 2017, Dynatrace has used its AI engine called **Davis**. Davis ingests data from OneAgent, PurePath, and other sources to automatically analyze and correlate information. This causation-based AI identifies dependencies and pinpoints root causes of issues—eliminating the need for manual triage.
 
     > Causation-based AI (used by Dynatrace’s Davis engine) is an approach to artificial intelligence that goes beyond simply spotting patterns or correlations—it identifies why something happened, not just that it happened.
+
+
+<br><br><br>
+
+## Dynatrace Deployment Architecture and Licensing
+The Dynatrace Software Intelligence Platform consists of three main components and supports two deployment models: **SaaS** and **on-premise (Dynatrace Managed)**. Regardless of the model, the following components are core to a full deployment:
+
+### Core Components
+#### 1. Data Collector
+Dynatrace offers three data collection options:
+- **OneAgent (Recommended)**: Installed on each host to collect high-granularity metrics, traces, logs, and events.
+- **APIs**: Custom data ingestion via Dynatrace APIs for cases where agents cannot be installed.
+- **Integrations**: Built-in integrations with technologies like OpenTelemetry, Kubernetes, AWS, Azure, and GCP.
+
+#### 2. Proxy Service – *ActiveGate*
+Acts as an intermediary between data sources and the server cluster. It:
+- Streamlines communication and data transfer
+- Supports secure environments and remote networks
+- Can be deployed in both SaaS and Managed setups
+
+#### 3. Server Cluster
+Processes, stores, and analyzes collected data:
+- In **Dynatrace SaaS**, the server cluster is hosted and managed by Dynatrace.
+- In **Dynatrace Managed**, you host and manage the cluster in your own environment (e.g., on-premise or private cloud).
+
+<br>
