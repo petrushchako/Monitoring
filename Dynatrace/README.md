@@ -220,3 +220,31 @@ Processes, stores, and analyzes collected data:
 - Includes:
   - **Mission Control**: Health monitoring and support service for your cluster
   - **Management Console**: Web UI to configure and manage the cluster and user access
+
+<br>
+
+### Licensing and Billing
+Dynatrace uses a **usage-based licensing model**, with pricing tied to specific metrics depending on the feature set.
+
+#### Legacy Metrics-Based Model
+1. **Host Units (HUs)**:
+   - Based on host memory (e.g., 1 HU per 8 GB RAM)
+   - Used for OneAgent-monitored hosts
+2. **Digital Experience Monitoring Units (DEM Units)**:
+   - Used for Synthetic Monitoring and Real User Monitoring
+   - Example: 10,000 DEM units/year allocation
+3. **Davis Data Units (DDUs)**:
+   - Used for features like log monitoring, custom metrics, and events
+   - Example: 100,000 DDUs/year allocation
+
+> **Note**: This model typically requires annual billing, but Dynatrace offers a pay-as-you-go option via AWS Marketplace with a 15-day free trial.
+
+#### New Subscription Model (As of Course Completion)
+- Based on:
+  - **Gigabyte-hour (GB-h) usage**
+  - **Synthetic requests**
+  - **Real User Monitoring (RUM) sessions**
+- Legacy customers may retain the old model; new customers are onboarded with this pricing structure by default.
+
+<br><br><br>
+
