@@ -203,3 +203,20 @@ Processes, stores, and analyzes collected data:
 - In **Dynatrace Managed**, you host and manage the cluster in your own environment (e.g., on-premise or private cloud).
 
 <br>
+
+### Deployment Models
+#### Dynatrace SaaS
+- **Default and fastest to deploy**
+- Only **OneAgent** is required to begin monitoring
+- **ActiveGate** is optional and only needed for specific technologies (e.g., DMZs, Kubernetes, etc.)
+- Dynatrace hosts and manages the entire server infrastructure
+
+#### Dynatrace Managed
+- Suitable for **highly regulated organizations** that require data to stay on-premise
+- Requires:
+  - OneAgent on monitored hosts
+  - Self-hosted Dynatrace server cluster
+  - At least one ActiveGate
+- Includes:
+  - **Mission Control**: Health monitoring and support service for your cluster
+  - **Management Console**: Web UI to configure and manage the cluster and user access
