@@ -296,4 +296,46 @@ Beyond APM and infrastructure, Dynatrace offers capabilities in:
 These features allow Dynatrace to serve as a unified platform for IT, development, and business teams.
 
 
+<br><br><br>
+
+## Observing APM Use Cases
+Application Performance Monitoring (APM) has been the foundational offering of Dynatrace since its inception. It supports a wide variety of application types—web, mobile, and database applications—and can instrument many programming languages and frameworks including Java, .NET, Node.js, and PHP.
+
+Below are three core APM use cases that demonstrate Dynatrace’s capabilities:
+
+### 1. Database Monitoring
+Modern applications heavily rely on both SQL and NoSQL databases. Dynatrace offers deep visibility into database performance:
+- **Automatic instrumentation** using OneAgent provides top database statements automatically and continuously.
+- Key metrics captured include:
+  - Query response time
+  - Query failure rate
+  - Database availability
+- **Backtrace functionality** shows the exact sequence of application calls leading to a specific query, helping to correlate user actions with database behavior.
+- Enables proactive issue resolution before user impact occurs.
+
+### 2. Code-Level Monitoring
+Code execution visibility is often abstracted in modern application environments, but Dynatrace helps you regain insight:
+- Supports environments like Java JVM and .NET CLR.
+- **PurePath distributed tracing** tracks every method call across the stack.
+- Insights provided include:
+  - Time spent in individual methods
+  - Memory usage by objects
+  - Error identification and slow method calls
+- Alerts can be configured to notify you of code-level performance issues.
+
+This empowers developers and operators to optimize code behavior before it affects end-users.
+
+### 3. Service Monitoring
+With the shift from SOA to microservices, tracking service performance and interdependencies has become more complex. Dynatrace addresses this challenge with:
+- **Smartscape topology mapping** – Automatically detects services and visualizes communication paths across the infrastructure.
+- Helps identify:
+  - Inter-service dependencies
+  - Service health and performance
+  - Bottlenecks and service-specific failures
+- Key service metrics available:
+  - Response time
+  - Request throughput
+  - Error rate
+
+Smartscape enables rapid root cause analysis by allowing you to drill down from a high-level view to individual service-level insights.
 
