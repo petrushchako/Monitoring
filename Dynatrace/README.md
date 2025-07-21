@@ -339,3 +339,42 @@ With the shift from SOA to microservices, tracking service performance and inter
 
 Smartscape enables rapid root cause analysis by allowing you to drill down from a high-level view to individual service-level insights.
 
+<br><br><br>
+
+## Discovering Infrastructure Use Cases
+In addition to application monitoring, Dynatrace offers robust capabilities for monitoring infrastructure components such as hosts, networks, and logs. Below are three key infrastructure use cases that demonstrate how Dynatrace can help you ensure the stability and performance of your application environments.
+
+### 1. Host Monitoring
+Effective monitoring of physical and virtual machines is critical for maintaining application availability and performance. Dynatrace provides comprehensive host monitoring via OneAgent, enabling you to:
+- Automatically collect and report on key host metrics
+- Identify CPU usage spikes that can lead to degraded performance
+- Detect disk failures or issues that may result in data loss
+- View all active processes running on a host and evaluate their performance impact
+
+This allows teams to proactively address infrastructure-level issues that may affect end-user experience.
+
+### 2. Network Monitoring
+Applications rely heavily on network infrastructure for communication. Dynatrace enhances visibility into network behavior and performance by:
+- Monitoring incoming and outgoing traffic between hosts
+- Capturing network interface metrics through OneAgent
+- Identifying traffic congestion and network errors
+- Pinpointing problematic connections that may cause application latency
+
+Although traditional APM tools focused mainly on application internals, Dynatrace extends its monitoring to the network layer, offering a more complete picture of system health and dependencies.
+
+### 3. Log Monitoring
+Modern systems generate a vast amount of log data, making it difficult to extract meaningful insights. Dynatrace addresses this challenge with built-in log monitoring capabilities:
+- Automatically collects relevant log data using OneAgent
+- Identifies log errors and warnings on infrastructure hosts
+- Supports two primary versions:
+  - **Log Monitoring Classic**
+  - **Log Management and Analytics using Grail**
+- Can integrate with third-party and cloud provider tools to centralize and analyze external log sources
+
+These capabilities help reduce noise and streamline the detection of issues buried within large volumes of log data.
+
+
+<br><br><br>
+
+
+## 
