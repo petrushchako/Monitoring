@@ -493,9 +493,6 @@ Dynatrace supports various other collection methods beyond OneAgent:
 
 <br>
 
-### Demo Overview
-A demo illustrates how other collection methods (like API or log integration) can be used in real-world scenarios. This shows Dynatrace’s flexibility when you can't or don’t want to use an agent. <br>
-
 ### Real User Monitoring (RUM) and Synthetic Monitoring
 Dynatrace also supports **ageless** or **agentless** monitoring using:
 - **Real User Monitoring (RUM):** Captures actual user sessions and experience across web or mobile applications.
