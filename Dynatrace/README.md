@@ -445,9 +445,58 @@ With this insight, IT departments can support business goals more effectively an
 Service Level Objectives (SLOs) define the acceptable level of service quality that underpins Service Level Agreements (SLAs). Dynatrace supports comprehensive SLO tracking to help ensure SLA compliance.
 
 Key capabilities:
-
 - Define SLOs using Service Level Indicators (SLIs) like availability, response time, and error rate
 - Track metrics such as error budgets to measure progress toward SLOs
 - Trigger alerts when SLO thresholds are breached to take corrective action proactively
 
 Dynatrace SLO monitoring helps organizations maintain high service reliability and avoid SLA violations that could result in penalties or customer dissatisfaction.
+
+<br><br><br>
+
+
+# Discovering and Ingesting Data into Dynatrace
+### OneAgent Installation and Use Cases
+Dynatrace simplifies the data collection process with **OneAgent**, its core software intelligence agent. OneAgent automatically collects performance metrics from infrastructure, applications, processes, containers, and logs—all without requiring multiple agents or complex configurations. <br>
+**Key Benefits:**
+- OneAgent handles host-level, process-level, and container-level monitoring.
+- Automatically discovers services and dependencies.
+- Requires no manual configuration post-installation.
+
+Use cases for OneAgent include:
+- Monitoring .NET, Java, and other applications.
+- Container-based infrastructure (e.g., Docker).
+- Cloud-native environments like GCP, AWS, or Azure.
+
+<br>
+
+### Installing OneAgent
+The installation of OneAgent is straightforward. Once installed, it:
+- Begins sending telemetry to Dynatrace immediately.
+- Requires no additional steps to collect logs, CPU, memory, network, or process metrics.
+- Enables full-stack observability with minimal effort.
+
+<br>
+
+### ActiveGate
+**ActiveGate** is Dynatrace’s proxy and data transfer service. It is useful when:
+- You need to monitor environments behind firewalls or NAT.
+- Reducing outbound traffic is important.
+- Integrating with external APIs or enabling synthetic monitoring.
+
+ActiveGate relays data from OneAgents to the Dynatrace cluster and is also used in synthetic tests and cloud integrations. <br>
+
+### Other Data Collection Methods
+Dynatrace supports various other collection methods beyond OneAgent:
+- **Log Ingestion:** Native log analysis from OneAgent or external ingestion.
+- **APIs:** Use Dynatrace APIs to push custom metrics or retrieve platform data.
+- **Direct Integrations:** Dynatrace connects with third-party systems like cloud services, CI/CD tools, and more (e.g., AWS CloudWatch, Kubernetes).
+
+<br>
+
+### Demo Overview
+A demo illustrates how other collection methods (like API or log integration) can be used in real-world scenarios. This shows Dynatrace’s flexibility when you can't or don’t want to use an agent. <br>
+
+### Real User Monitoring (RUM) and Synthetic Monitoring
+Dynatrace also supports **ageless** or **agentless** monitoring using:
+- **Real User Monitoring (RUM):** Captures actual user sessions and experience across web or mobile applications.
+- **Synthetic Monitoring:** Simulates user activity using pre-configured tests to measure uptime, performance, and availability from different geographies.
