@@ -497,3 +497,29 @@ Dynatrace supports various other collection methods beyond OneAgent:
 Dynatrace also supports **ageless** or **agentless** monitoring using:
 - **Real User Monitoring (RUM):** Captures actual user sessions and experience across web or mobile applications.
 - **Synthetic Monitoring:** Simulates user activity using pre-configured tests to measure uptime, performance, and availability from different geographies.
+
+
+<br><br><br>
+
+## Deploying Dynatrace OneAgent
+### Evolution of OneAgent
+Dynatrace originally used multiple agents tailored to specific environments—Java, .NET, PHP, and separate infrastructure agents. These were consolidated into a **single unified agent**, now known as **OneAgent**, to simplify deployment and data collection.
+
+<br>
+
+### What OneAgent Does
+OneAgent is a lightweight software component that is installed on each host you want to monitor. It collects and sends telemetry data from applications, services, servers, databases, containers, and even mainframes directly to Dynatrace for analysis. <br>
+**Key Capabilities:**
+- Collects both **infrastructure** and **application** performance data.
+- Supports **cloud-native**, **on-prem**, and **hybrid** environments.
+- Operates across **containers**, **VMs**, and **bare-metal** systems.
+- Requires **no upfront manual configuration**.
+
+<br>
+
+### Supported Environments
+OneAgent works across a wide range of technologies and platforms:
+- Operating Systems: Windows, Linux, and IBM z/OS
+- Cloud Providers: AWS, Azure, GCP
+- Container Platforms: Kubernetes, OpenShift, Cloud Foundry
+- Traditional and modern environments
