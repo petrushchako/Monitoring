@@ -10,7 +10,7 @@ The Four Golden Signals are a foundational monitoring principle introduced in Go
     - **Successful requests**: Track average/median latency.
     - **Failed requests**: Track separately — often much higher.
     - **Example**: HTTP response time, DB query duration, API call latency.
-<br>
+  
 
 ### **2. Traffic**
 - **Definition**: A measure of how much demand is placed on your system.
@@ -18,7 +18,6 @@ The Four Golden Signals are a foundational monitoring principle introduced in Go
 - **Metrics**: Requests per second (RPS), transactions per second (TPS), bandwidth, concurrent sessions.
 - **Example**: Number of HTTP requests per minute on a web server.
 
-<br>
 
 ### **3. Errors**
 - **Definition**: The rate of failed requests.
@@ -29,13 +28,20 @@ The Four Golden Signals are a foundational monitoring principle introduced in Go
     - Custom business logic failures
     - **Example**: 2% of requests return a 500 status code.
 
-<br>
 
 ### **4. Saturation**
 - **Definition**: How "full" your system is — a measure of resource utilization.
 - **Goal**: Identify performance degradation due to nearing capacity.
 - **Resources to Monitor**: CPU, memory, disk, thread pools, DB connections.
 - **Example**: 90% memory usage or 100% CPU on an application node.
+
+> **What to Do When You Detect Saturation:**
+> - Scale out (add more instances)
+> - Optimize code or queries
+> - Offload background tasks
+> - Throttle or queue requests
+
+Saturation is about capacity — when you’re close to the max, you’re saturating. When you’re at the max, you’re fully saturated, and performance issues usually follow.
 
 <br>
 
