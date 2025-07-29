@@ -638,3 +638,51 @@ This flexibility supports both simple and complex enterprise environments.
 - Ensure these ports are open in your firewall and networking rules for full functionality.
 
 <br><br><br>
+
+## Collecting Custom Data with Dynatrace API
+### Overview
+While **OneAgent** and **ActiveGate** are the primary data collectors in Dynatrace, you can also send **custom or unsupported data** directly using the **Dynatrace API**. This is particularly useful for integrating **business metrics**, **third-party system data**, or **custom events** into your monitoring environment.
+
+<br>
+
+### Dynatrace API Types
+Dynatrace provides two major types of APIs:
+
+#### 1. **Environment API**
+Used to **send or retrieve data** related to your **monitoring environment**.
+Examples:
+- Send custom metrics for systems not natively supported by Dynatrace
+- Submit custom event data to be visualized and analyzed in the Dynatrace UI
+
+#### 2. **Configuration API**
+Used to **manage and configure the monitoring environment** programmatically.
+Examples:
+- Create and configure new dashboards
+- Modify alerting profiles or tagging rules
+
+<br>
+
+### How It Works
+- Communication is performed using **HTTP requests** with **JSON-formatted payloads**
+- You target the correct endpoint based on your API type:
+  - For custom metrics → `Environment API /metrics` endpoint
+  - For custom events → `Environment API /events` endpoint
+  - For dashboard setup → `Configuration API /dashboards` endpoint
+
+<br>
+
+### Use Cases
+- Integrate **unsupported systems** by pushing metric data
+- Submit **business logic-related events** not automatically tracked
+- Automate **infrastructure-as-code** style configuration of dashboards and alerts
+
+<br>
+
+### Benefits
+- Full control over what data is visualized in Dynatrace
+- Extend visibility into **custom environments** and **external systems**
+- Dynamically manage monitoring setups via **API automation**
+
+<br><br><br>
+
+
