@@ -671,4 +671,52 @@ Examples:
 
 <br><br><br>
 
+## Collecting Data from Logs
+Dynatrace supports **log monitoring** using both **agent-based collection** (via OneAgent) and **API-based ingestion**, making it flexible and compatible with modern hybrid infrastructures. By default, OneAgent starts collecting logs immediately after installation, but manual configuration is possible when automatic discovery doesn’t detect certain log files.
 
+
+### Log Collection Methods
+#### 1. **OneAgent-Based Collection**
+- Automatically collects logs upon installation.
+- If logs are not automatically discovered, you can manually define **log file paths** for OneAgent to monitor.
+- Works seamlessly in **containerized environments**, requiring minimal setup.
+
+#### 2. **Log Monitoring API**
+- Part of the **Environment API**, used for pushing external logs to Dynatrace.
+- Useful for logs from services such as:
+  - Amazon CloudWatch
+  - Azure Monitor
+  - Open source tools like **Logstash** or **Fluentd**
+- Log data is sent in **JSON format**.
+
+#### 3. **Routing Considerations**
+- In **Dynatrace SaaS without ActiveGate**, data flows directly to Dynatrace servers.
+- In **Dynatrace Managed** or **ActiveGate setups**, logs are forwarded via the ActiveGate (environment or cluster).
+
+<br>
+
+### Log Monitoring Products
+#### **1. Log Monitoring Classic**
+- Formerly known as *Log Monitoring V2*.
+- Uses **schema-on-write** and **indexing** for log storage and queries.
+- Analyzed using the **Dynatrace Pattern Language (DPL)**.
+  - DPL enables pattern-matching rules to structure and extract insights from log content.
+- Search performed in the **Log Viewer** interface.
+
+#### **2. Log Management and Analytics**
+- A modern product built on top of the **Grail** platform.
+- Uses **indexless** and **schema-on-read** architecture (data lakehouse model).
+- Supports unified ingestion and storage of:
+  - **Logs**
+  - **Metrics**
+  - **Traces**
+- Enables high-speed ingestion and versatile querying using the **Dynatrace Query Language (DQL)**.
+  - Allows dynamic querying without requiring predefined schema at ingest time.
+  - Provides more scalability and flexibility for modern observability needs.
+
+
+### Key Benefits of Grail-Based Log Management
+- Centralized data storage across logs, metrics, and traces
+- Faster ingestion without schema enforcement
+- Advanced querying via DQL for detailed analysis
+- Designed for modern observability at scale
