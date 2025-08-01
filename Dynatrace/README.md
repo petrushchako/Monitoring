@@ -702,7 +702,6 @@ Dynatrace supports **log monitoring** using both **agent-based collection** (via
 - Analyzed using the **Dynatrace Pattern Language (DPL)**.
   - DPL enables pattern-matching rules to structure and extract insights from log content.
 - Search performed in the **Log Viewer** interface.
-
 #### **2. Log Management and Analytics**
 - A modern product built on top of the **Grail** platform.
 - Uses **indexless** and **schema-on-read** architecture (data lakehouse model).
@@ -714,9 +713,51 @@ Dynatrace supports **log monitoring** using both **agent-based collection** (via
   - Allows dynamic querying without requiring predefined schema at ingest time.
   - Provides more scalability and flexibility for modern observability needs.
 
-
 ### Key Benefits of Grail-Based Log Management
 - Centralized data storage across logs, metrics, and traces
 - Faster ingestion without schema enforcement
 - Advanced querying via DQL for detailed analysis
 - Designed for modern observability at scale
+
+
+<br><br><br>
+
+
+## Collecting Data with Integrations
+While OneAgent and the Dynatrace API offer powerful data collection options, Dynatrace also supports **a wide range of integrations** to extend observability into third-party tools and platforms. These integrations simplify monitoring across hybrid and cloud-native environments, and help ensure timely alerting and efficient incident response.
+
+### Integration Categories
+#### **1. Cloud Platform Integrations**
+- Dynatrace integrates with major cloud providers:
+  - **Amazon Web Services (AWS)**
+  - **Microsoft Azure**
+  - **Google Cloud Platform (GCP)**
+- When installing OneAgent isn't feasible (e.g., serverless or storage services), Dynatrace can ingest metrics from:
+  - **Amazon CloudWatch**
+  - **Azure Monitor**
+  - **Google Cloud Operations Suite** (formerly Stackdriver)
+- These integrations use your cloud credentials to collect telemetry such as resource usage, health, and latency, helping you maintain visibility across your cloud services.
+
+#### **2. Incident Notification Integrations**
+- Dynatrace can push problem alerts to third-party incident management platforms, enabling faster troubleshooting and reduced MTTR.
+- Supported platforms include:
+  - **Jira**
+  - **PagerDuty**
+  - **ServiceNow**
+- These integrations can:
+  - Auto-create problem tickets
+  - Trigger remediation workflows
+  - Send immediate alerts based on detected anomalies
+- If your preferred tool isn't natively supported, you can use **webhooks**:
+  - Define a target URL
+  - Dynatrace sends **HTTP POST** requests to notify external systems
+  - Works with any tool that accepts HTTP-based communication
+
+### Integration Management
+- All integrations are accessible through the **Dynatrace Hub** within the Dynatrace UI.
+- The Hub allows:
+  - Discovering new integrations
+  - Managing existing configurations
+  - Enabling and disabling specific data flows
+
+<br><br><br>
