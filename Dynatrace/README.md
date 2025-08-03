@@ -761,3 +761,46 @@ While OneAgent and the Dynatrace API offer powerful data collection options, Dyn
   - Enabling and disabling specific data flows
 
 <br><br><br>
+
+
+## Collecting Data with Real User and Synthetic Monitoring
+### Importance of User Monitoring
+Organizations like **Bethany's Pie Shop** require visibility into how their applications perform for end users. RUM and synthetic monitoring help proactively identify performance issues before they affect users.
+
+### RUM and Synthetic Monitoring Without OneAgent
+If deploying **OneAgent** isn't feasible (e.g., lack of host or page access), Dynatrace supports three alternative methods to collect RUM and synthetic data:
+
+<br>
+
+### Agentless Monitoring Options
+
+1. **Agentless RUM**
+    - **Use case**: When OneAgent cannot be installed but you have access to webpage code.
+    - **Approach**: Manually inject Dynatrace JavaScript into the application's HTML.
+    - **Limitation**: Tedious and less scalable for large web apps.
+2. **RUM Browser Extension**
+    - **Use case**: Monitoring SaaS apps (e.g., Google Workspace, Microsoft 365) where you can’t modify application code.
+    - **Approach**: Install browser extension on user browsers (Chrome, Edge).
+    - **Configuration**: Define URL patterns to collect RUM data.
+    - **Best suited for**: Internal enterprise users.
+
+## Synthetic Monitoring Options
+When real users aren’t available or you want to test global access scenarios, use synthetic tests to simulate users.
+
+1. **Single URL Browser Monitor**
+    - Simulates a user accessing a single page.
+    - Allows selection of device type (mobile, desktop).
+    - Uses a real browser to test availability and performance.
+2. **Browser Click Path**
+    - Simulates a **multi-step user journey** (e.g., product order flow).
+    - Can be recorded using a Dynatrace Chrome extension or scripted manually.
+3. **HTTP Monitor**
+    - Sends basic HTTP requests to verify endpoint availability.
+    - Lightweight and useful for uptime monitoring or monitoring competitor sites.
+
+### Benefits of Synthetic Monitoring
+- Runs from **multiple geographic locations**.
+- Detects issues before users report them.
+- Helps simulate **slow network conditions** or regional behavior.
+- Enables **competitor performance analysis** via public-facing endpoints.
+
