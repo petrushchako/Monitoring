@@ -898,3 +898,17 @@ When building your own dashboards, focus on metrics that align with your **syste
 - **Throughput**: Number of requests handled over time (per second).
 - **Resource Utilization**: Usage of CPU, memory, and other system resources.
 - **User Satisfaction**: Includes Apdex score, conversion rates, and user experience indicators.
+
+### Analyzing Trends
+Using dashboard visualizations, you can:
+- Detect **recurring performance issues** (e.g., daily spikes).
+- **Adjust timeframes** to investigate patterns over time.
+- Spot anomalies that deviate from expected behavior.
+- Add **event data** (e.g., deployments, promotions) to correlate with performance changes.
+
+### Comparative Analysis
+Dynatrace supports **comparison across dimensions** using visualization tiles:
+- Compare metrics by host, process, service, etc.
+- Use **stacked column or area charts** to compare network traffic or resource usage.
+- Identify **trends, patterns, and outliers**.
+- **Drill down** into specific dimensions for root-cause analysis.
