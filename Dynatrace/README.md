@@ -836,3 +836,42 @@ With the vast volume of data collected, effective visualization:
 <br><br><br>
 
 
+## Visualizing Data with Tiles and Charts
+Dashboards in Dynatrace provide a centralized and customizable way to **visualize data**, **monitor system performance**, and **track key metrics** across your environment. By using dashboards effectively, you can quickly detect issues, analyze trends, and take action when necessary.
+
+### Purpose of Dashboards
+- Consolidate **KPI metrics** across infrastructure and applications.
+- Visualize trends and real-time data for rapid insights.
+- Support operational awareness and incident response.
+- Enable presentation-ready views for reporting.
+
+### Dashboard Components: Tiles
+Dynatrace uses the term **tiles** to describe the visual components on a dashboard. There are nearly **10 types of tiles**, but here are three major groups:
+
+#### 1. **Visualization Tiles**
+- Display data from **Data Explorer queries**.
+- Multiple display options:
+  - **Graphs**: For tracking trends and patterns.
+  - **Tables**: For comparing metrics across dimensions.
+  - **Single values**: For quick insight into metric changes.
+- Fully customizable to match visualization preferences.
+
+#### 2. **Context Tiles**
+- Used for dashboard **organization and explanation**.
+- Types include:
+  - **Header Tiles**: Label and group other tiles.
+  - **Markdown Tiles**: Add text with rich formatting.
+  - **Image Tiles**: Embed logos or graphics for visual enhancement.
+
+#### 3. **Infrastructure Tiles**
+- Provide insights into host and network performance.
+- Offer **drill-down capability** to investigate specific issues.
+- Example tile types:
+  - **Host Health Tiles**: Show hosts with performance issues.
+  - **Network Status Tiles**: Monitor host network traffic.
+  - **Docker Tiles**: Visualize container and image performance vs. prior periods.
+
+### Benefits
+- Easy-to-use, drag-and-drop interface.
+- Allows both high-level monitoring and deep-dive analysis.
+- Supports collaboration across operations, development, and business teams.
