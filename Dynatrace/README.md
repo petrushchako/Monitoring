@@ -875,3 +875,26 @@ Dynatrace uses the term **tiles** to describe the visual components on a dashboa
 - Easy-to-use, drag-and-drop interface.
 - Allows both high-level monitoring and deep-dive analysis.
 - Supports collaboration across operations, development, and business teams.
+
+
+<br><br><br>
+
+
+## Analyzing Data with Dashboards
+### Built-in Dashboards
+Dynatrace offers **preset dashboards** to help you get started quickly:
+- **Real User Monitoring (RUM)**
+- **Kubernetes**
+- **Synthetic Monitoring**
+
+These dashboards are available by default and can be **cloned and customized** to match your specific needs, reducing setup time.
+
+<br>
+
+### Key Metrics for Effective Analysis
+When building your own dashboards, focus on metrics that align with your **system performance goals**. Common metrics include:
+- **Response Time**: Time taken for an application to respond to user requests (in milliseconds).
+- **Error Rate**: Percentage of failed requests.
+- **Throughput**: Number of requests handled over time (per second).
+- **Resource Utilization**: Usage of CPU, memory, and other system resources.
+- **User Satisfaction**: Includes Apdex score, conversion rates, and user experience indicators.
