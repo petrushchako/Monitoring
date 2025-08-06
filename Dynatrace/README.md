@@ -912,3 +912,20 @@ Dynatrace supports **comparison across dimensions** using visualization tiles:
 - Use **stacked column or area charts** to compare network traffic or resource usage.
 - Identify **trends, patterns, and outliers**.
 - **Drill down** into specific dimensions for root-cause analysis.
+
+### Dynamic Filtering
+Dashboards can be enhanced with **dynamic filters** to focus on relevant data subsets:
+- Filter by dimensions such as **OS, host tags, or database vendor**.
+- Combine multiple filters for more refined analysis (e.g., a specific app in a specific region).
+- Helps tailor the dashboard to immediate analysis needs.
+
+### Sharing Dashboards
+Dynatrace offers several options to share insights:
+- **Access Sharing**: Grant access by user, group, or anonymously.
+- **Export to JSON**: Share dashboards as JSON files that others can import and adapt.
+- **Dashboard Subscriptions**: Schedule recurring email reports (weekly/monthly) for team-wide visibility.
+
+
+<br><br><br>
+
+
