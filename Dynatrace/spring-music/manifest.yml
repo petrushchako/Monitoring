@@ -10,3 +10,4 @@ applications:
     SPRING_PROFILES_ACTIVE: http2
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 17.+ } }'
     DT_CUSTOM_PROP: "Team=Operations Stack=CF"
+    DT_CLUSTER_ID: "spring-music"
